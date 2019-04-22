@@ -8,7 +8,7 @@ Sales Trends Analysis Illustration and Recommendation Software (STAIRS) is a bus
 To set up this application, you need to download the file folder from above or you can run the following command in your terminal.
 
 ```
-git clone https://github.com/Shahanaz-Alex/CCProject.git
+$ git clone https://github.com/Shahanaz-Alex/CCProject.git
 ```
 If you have downloaded the file from your browser, be sure to unzip it.
 
@@ -29,7 +29,7 @@ To install, visit https://docs.python-guide.org/dev/virtualenvs/.
 To install, in terminal run the command: 
 
 ```
-sudo apt install mysql-client-core-5.7
+$ sudo apt install mysql-client-core-5.7
 ```
 
 ### Installation
@@ -40,14 +40,14 @@ sudo apt install mysql-client-core-5.7
 2. Run the following command to create and run a virtual environment:
 
 ```
-python3 -m venv venv && . venv/bin/activate 
+$ python3 -m venv venv && . venv/bin/activate 
 ```
 
 3. Run these commands to deploy the stack:
 
 ```
-chmod +x create.sh
-./create.sh
+$ chmod +x create.sh
+$ ./create.sh
 ```
 
 N.B. If that does not work, open the file `create.sh`, copy its contents and paste it into the terminal window, then press Enter to run.
@@ -72,7 +72,7 @@ You should see a `StackId` returned to you. This means the creation has initiate
 
 7. Copy the following command into terminal and replace the `<DB Instance endpoint>` section with the previously copied Endpoint from step 4 then run the command.
 ```
-mysql -h <DB Instance endpoint> -P 3306 -u stairs1 -ppassword123 stairsdb < create_tables.sql
+$ mysql -h <DB Instance endpoint> -P 3306 -u stairs1 -ppassword123 stairsdb < create_tables.sql
 ```
 
 You should receive a Warming message.
@@ -80,7 +80,7 @@ You should receive a Warming message.
 8. Copy the following command into terminal but do not run. You will need to replace the `<EC2 IPv4 Public IP>` section with an IP address retrieved in the other steps.
 
 ```
-sudo docker-compose -H tcp://<EC2 IPv4 Public IP>:2375 -f docker-compose.yml up -d
+$ sudo docker-compose -H tcp://<EC2 IPv4 Public IP>:2375 -f docker-compose.yml up -d
 ```
 
 9. Return to the AWS Console and again, under Resources, navigate to `EC2Instance` and click on the highlighted ID.
@@ -96,7 +96,7 @@ sudo docker-compose -H tcp://<EC2 IPv4 Public IP>:2375 -f docker-compose.yml up 
 1. In the terminal, run the following commands to delete the stack:
 
 ```
-cd ..
-chmod +x delete.sh
-./delete.sh
+$ cd ..
+$ chmod +x delete.sh
+$ ./delete.sh
 ```
