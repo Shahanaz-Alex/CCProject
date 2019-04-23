@@ -9,6 +9,6 @@ services:
       DB_USER: stairs1
       DB_NAME: stairsdb
       DB_PASSWORD: password123
-      DB_HOST: <Replace this with the endpoint string for RDS>
+      DB_HOST: <REPLACE WITH RDS ENDPOINT ADDRESS>
       DB_PORT: 3306
   

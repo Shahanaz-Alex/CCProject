@@ -1,9 +1,7 @@
 from flask import Flask
 from flask import Flask, render_template, redirect, request, url_for, flash, session
 from flaskext.mysql import MySQL
-Import os
-
-
+import os
 
 DB_HOST = os.getenv('DB_HOST', 'host')
 DB_NAME = os.getenv('DB_NAME', 'name')

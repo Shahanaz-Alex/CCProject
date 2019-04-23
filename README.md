@@ -66,7 +66,7 @@ You should see a `StackId` returned to you. This means the creation has initiate
 
 5. In the file folder, click on the `app` folder.
 
-6. Open `docker-compose.yml` and paste the Endpoint information into the "DB_HOST" field, replacing the section `<Replace this with the endpoint string>` then save the file.
+6. Open `docker-compose.yml` and paste the Endpoint information into the "DB_HOST" field, replacing the section `<REPLACE WITH RDS ENDPOINT ADDRESS>` then save the file.
 
 9. Navigate into the `app` folder via the terminal.
 
