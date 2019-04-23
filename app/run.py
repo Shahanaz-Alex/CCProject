@@ -3,13 +3,21 @@ from flask import Flask, render_template, redirect, request, url_for, flash, ses
 from flaskext.mysql import MySQL
 
 
+
+
+DB_HOST = os.getenv('DB_HOST', 'host')
+DB_NAME = os.getenv('DB_NAME', 'name')
+DB_USER = os.getenv('DB_USER', 'user')
+DB_PASSWORD = os.getenv('DB_PASSWORD', 'password')
+
 app = Flask(__name__)
 app.secret_key = "stairsSecret"
-# app.config['MYSQL_DATABASE_HOST'] = 'gd16949uerbq7vq.cnuipuiqebbi.us-east-1.rds.amazonaws.com'
-# app.config['MYSQL_DATABASE_PORT'] = 3306
-# app.config['MYSQL_DATABASE_USER'] = 'stairs1'
-# app.config['MYSQL_DATABASE_PASSWORD'] = 'password123'
-# app.config['MYSQL_DATABASE_DB'] = 'stairsdb'
+
+app.config['MYSQL_DATABASE_HOST'] = DB_HOST
+app.config['MYSQL_DATABASE_USER'] = DB_USER
+app.config['MYSQL_DATABASE_PASSWORD'] = DB_PASSWORD
+app.config['MYSQL_DATABASE_DB'] = DB_NAME
+
 
 mysql = MySQL()
 mysql.init_app(app)
