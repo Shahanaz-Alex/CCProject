@@ -3,6 +3,10 @@
 
 Sales Trends Analysis Illustration and Recommendation Software (STAIRS) is a business analytic software as a service (SaaS) that allows organizations to graphically visualize their data in order to see growth and trends of their products based on their sales data over a past time-period.
 
+## Demo
+
+👉 Watch it <a href="https://youtu.be/sw06Nz3L7sU">here</a>.
+
 ## Getting Started
 
 To set up this application, you need to download the file folder from above or you can run the following command in your terminal.
@@ -18,11 +22,11 @@ If you have downloaded the file from your browser, be sure to unzip it.
 
 2. Git
 
-To install, visit https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
+To install, visit <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a>.
 
 3. Virtual Environments
 
-To install, visit https://docs.python-guide.org/dev/virtualenvs/.
+To install, visit <a href="https://docs.python-guide.org/dev/virtualenvs/">here</a>.
 
 4. MySQL
 
@@ -56,7 +60,7 @@ You should see a `StackId` returned to you. This means the creation has initiate
 
 ### Deploy Docker Application to CloudFormation Stack
 
-1. Visit Amazon's console at: https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks?filter=active.
+1. Visit Amazon's console <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks?filter=active">here</a>.
 
 2. Wait until the status of `group1Project` says "CREATE_COMPLETE".
 
